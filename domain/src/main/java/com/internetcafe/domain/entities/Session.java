@@ -1,4 +1,4 @@
-package com.internetcafe.domain;
+package com.internetcafe.domain.entities;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

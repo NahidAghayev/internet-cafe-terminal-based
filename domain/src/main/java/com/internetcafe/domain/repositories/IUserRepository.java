@@ -1,5 +1,6 @@
-package com.internetcafe.domain;
+package com.internetcafe.domain.repositories;
 
+import com.internetcafe.domain.entities.User;
 import java.util.List;
 import java.util.Optional;
 

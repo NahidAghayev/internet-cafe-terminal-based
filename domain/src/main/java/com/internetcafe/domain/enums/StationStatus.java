@@ -1,4 +1,4 @@
-package com.internetcafe.domain;
+package com.internetcafe.domain.enums;
 
 public enum StationStatus {
     AVAILABLE,

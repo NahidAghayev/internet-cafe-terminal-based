@@ -1,5 +1,6 @@
-package com.internetcafe.domain;
+package com.internetcafe.domain.entities;
 
+import com.internetcafe.domain.enums.UserRole;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
