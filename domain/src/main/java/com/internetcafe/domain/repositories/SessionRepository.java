@@ -4,7 +4,7 @@ import com.internetcafe.domain.entities.Session;
 import java.util.List;
 import java.util.Optional;
 
-public interface ISessionRepository {
+public interface SessionRepository {
     void save(Session session);
 
     void update(Session session);

@@ -4,7 +4,7 @@
 *.jar
 *.war
 *.ear
-/target/
+**/target/
 /bin/
 /build/
 NOTES.md

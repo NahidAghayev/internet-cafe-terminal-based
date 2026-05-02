@@ -4,7 +4,7 @@ import com.internetcafe.domain.entities.User;
 import java.util.List;
 import java.util.Optional;
 
-public interface IUserRepository {
+public interface UserRepository {
     Optional<User> findByUsername(String username);
 
     void save(User user);

@@ -4,7 +4,7 @@ import com.internetcafe.domain.entities.Station;
 import java.util.List;
 import java.util.Optional;
 
-public interface IStationRepository {
+public interface StationRepository {
     Optional<Station> findById(int id);
 
     List<Station> findAll();
