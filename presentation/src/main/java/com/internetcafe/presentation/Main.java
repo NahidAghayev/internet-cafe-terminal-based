@@ -17,6 +17,9 @@ public class Main {
         try {
             ConnectionManager connectionManager = new ConnectionManager(url, user, pass);
             AppContext context = new AppContext(connectionManager);
+
+            MainMenu mainMenu = new MainMenu(context);
+            mainMenu.show();
             System.out.println("System initialized successfully.");
         } catch (Exception ex) {
             System.err.println("Failed to start application: " + ex.getMessage());
