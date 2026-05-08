@@ -1,9 +1,5 @@
 package com.internetcafe.presentation;
 
-import com.internetcafe.dataaccess.*;
-import com.internetcafe.domain.repositories.*;
-import com.internetcafe.service.*;
-
 import java.math.BigDecimal;
 import java.util.*;
 

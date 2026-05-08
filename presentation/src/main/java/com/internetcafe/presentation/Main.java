@@ -2,8 +2,6 @@ package com.internetcafe.presentation;
 
 
 import com.internetcafe.dataaccess.*;
-import com.internetcafe.domain.repositories.*;
-import com.internetcafe.service.*;
 
 public class Main {
     public static void main(String[] args) {
