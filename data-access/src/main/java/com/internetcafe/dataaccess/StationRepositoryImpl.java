@@ -71,7 +71,7 @@ public class StationRepositoryImpl implements StationRepository {
 
     @Override
     public void save(Station station) {
-        String sql = "INSERT INTO stations (name, specs, status, hourly_rate) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO stations (name, specs, status, hourly_rate) VALUES (?, ?, ?::station_status, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, station.getName());
@@ -86,7 +86,7 @@ public class StationRepositoryImpl implements StationRepository {
 
     @Override
     public void update(Station station) {
-        String sql = "UPDATE stations SET name = ?, specs = ?, status = ?, hourly_rate = ? WHERE id = ?";
+        String sql = "UPDATE stations SET name = ?, specs = ?, status = ?::station_status, hourly_rate = ? WHERE id = ?";
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, station.getName());

@@ -68,10 +68,14 @@ public class CustomerMenu {
     }
 
     private void startSession() {
+        List<Station> stations = appContext.getStationService().getAvailableStations();
+
         viewAvailableStations();
-        int stationId = ConsoleHelper.readInt("Enter Station ID to start: ");
-        appContext.getSessionService().startSession(stationId);
-        ConsoleHelper.printSuccess("Session started successfully!");
+        if (!stations.isEmpty()) {
+            int stationId = ConsoleHelper.readInt("Enter Station ID to start: ");
+            appContext.getSessionService().startSession(stationId);
+            ConsoleHelper.printSuccess("Session started successfully!");
+        }
     }
 
     private void endSession() {

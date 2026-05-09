@@ -20,7 +20,7 @@ public class TransactionRepositoryImpl implements TransactionRepository {
 
     @Override
     public void save(Transaction transaction) {
-        String sql = "INSERT INTO transactions (user_id, amount, type, created_at) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO transactions (user_id, amount, type, created_at) VALUES (?, ?, ?::transaction_type, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, transaction.getUserId());
