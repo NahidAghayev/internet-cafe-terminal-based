@@ -20,7 +20,7 @@ public class Main {
 
             MainMenu mainMenu = new MainMenu(context);
             mainMenu.show();
-            System.out.println("System initialized successfully.");
+            System.out.println("Goodbye! Thank you for using the Internet Cafe System.");
         } catch (Exception ex) {
             System.err.println("Failed to start application: " + ex.getMessage());
         }
