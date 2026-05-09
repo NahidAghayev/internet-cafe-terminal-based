@@ -19,7 +19,8 @@ public class CustomerMenu {
         boolean running = true;
         while (running) {
             User user = SessionContext.getCurrentUser();
-            ConsoleHelper.printHeader("CUSTOMER MENU - Balance: " + user.getBalance() + " AZN");
+            ConsoleHelper.printHeader("===== CUSTOMER MENU =====");
+            ConsoleHelper.printHeader("Logged in as:  " + user.getUsername() + " | Balance: " + user.getBalance() + " AZN");
             System.out.println("1. View Available Stations");
             System.out.println("2. Start Session");
             System.out.println("3. End Session");

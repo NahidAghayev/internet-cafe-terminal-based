@@ -51,6 +51,10 @@ public class AuthService {
         userRepository.save(user);
     }
 
+    public java.util.List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+
     private String hash(String input) {
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
