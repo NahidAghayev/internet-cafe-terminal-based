@@ -104,4 +104,13 @@ public class SessionService {
         return sessionRepository.findActiveByUserId(currentUser.getId())
                 .orElseThrow(() -> new NoActiveSessionException("No active session found"));
     }
+
+    public java.util.List<Session> getSessionHistory() {
+        User currentUser = SessionContext.getCurrentUser();
+        return sessionRepository.findByUserId(currentUser.getId());
+    }
+
+    public java.util.List<Session> getAllSessions() {
+        return sessionRepository.findAll();
+    }
 }

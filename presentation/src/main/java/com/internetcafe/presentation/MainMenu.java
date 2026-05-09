@@ -17,9 +17,9 @@ public class MainMenu {
 
         while (running) {
             ConsoleHelper.printHeader("Internet Cafe System");
-            System.out.println("0. Exit");
             System.out.println("1. Login");
             System.out.println("2. Register");
+            System.out.println("0. Exit");
 
             int choice = ConsoleHelper.readInt("Choice", 0, 2);
             switch (choice) {
